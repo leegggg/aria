@@ -57,9 +57,9 @@ def main():
     args = parser.parse_args()
 
     trackers = []
-    # trackers.extend(readConfig(args.confPath))
+    trackers.extend(readConfig(args.confPath))
     trackers.extend(getTrackers(allTrackerIpUrl))
-    # trackers.extend(getTrackers(allTrackerUrl))
+    trackers.extend(getTrackers(allTrackerUrl))
     trackers.extend(getTrackers(cccaTrackerUrl,sep=','))
 
     trackers = set(trackers)
