@@ -51,7 +51,7 @@ def main():
     parser.add_argument('--conf', dest='confPath',
                         action='store', default='aria.conf')
     parser.add_argument('--out', dest='out',
-                        action='store', default='data/aria2.conf')
+                        action='store', default='aria.conf')
     parser.add_argument('--token', dest='token',
                         action='store', default='')
     args = parser.parse_args()
